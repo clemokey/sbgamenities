@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salzburg Amenities Near Me</title>
+
+    <!-- Meta tags for SEO and social media -->
+    <meta name="description" content="Find amenities near you in Salzburg, including food, education, healthcare, leisure, transport, and public services.">
+    <meta name="author" content="Bamidele Oke">
+    <meta name="keywords" content="Salzburg, amenities, food, education, healthcare, leisure, transport, public services">
+
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Salzburg Amenities Near Me">
+    <meta property="og:description" content="Find amenities near you in Salzburg, including food, education, healthcare, leisure, transport, and public services.">
+    <meta property="og:image" content="https://bamideleoke.dev/assets/media/sbgamenities.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Font Awesome for UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Application stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Leaflet stylesheet -->
+    <link rel="stylesheet" href="css/leaflet.css">
+    
+    <!-- Leaflet JavaScript library -->
+    <script src="js/leaflet-src.js"></script>
+    
+    <!-- GeoJSON data files -->
+    <script src="data/education.js" type="text/javascript"></script> 
+    <script src="data/food.js" type="text/javascript"></script> 
+    <script src="data/health.js" type="text/javascript"></script> 
+    <script src="data/leisure.js" type="text/javascript"></script> 
+    <script src="data/public_services.js" type="text/javascript"></script> 
+    <script src="data/transport.js" type="text/javascript"></script> 
+    <script src="data/salzburg.js" type="text/javascript"></script> 
+    
+    <!-- Esri Leaflet Plugin -->
+    <script src="https://unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet.js"></script>
+    
+    <!-- Leaflet Control Geocoder Plugin -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+    <!-- Application bar -->
+    <header>
+        <h1>Amenities Near Me</h1>
+        <div class="search-container">
+            <input type="number" id="searchRadius" placeholder="Set radius (meters)">
+            <button id="applyRadius">Apply</button>
+        </div>
+    </header>
+
+    <!-- Division for the map -->
+    <div id="map"></div> 
+    <div style="display: none;" id="chip-container"></div>
+
+    <!-- Link to main JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
